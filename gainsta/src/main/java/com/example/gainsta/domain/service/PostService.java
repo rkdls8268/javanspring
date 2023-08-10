@@ -1,7 +1,7 @@
 package com.example.gainsta.domain.service;
 
-import com.example.gainsta.presentation.dto.RequestDTO;
+import com.example.gainsta.presentation.dto.RequestPostDTO;
 
 public interface PostService {
-    void createPost(RequestDTO requestDTO);
+    void createPost(RequestPostDTO requestPostDTO);
 }

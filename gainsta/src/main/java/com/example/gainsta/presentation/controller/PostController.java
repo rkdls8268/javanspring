@@ -1,8 +1,9 @@
 package com.example.gainsta.presentation.controller;
 
 import com.example.gainsta.domain.service.PostService;
-import com.example.gainsta.presentation.dto.RequestDTO;
+import com.example.gainsta.presentation.dto.RequestPostDTO;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,7 +17,8 @@ public class PostController {
     }
 
     @PostMapping("/posts")
-    public void createFeed(RequestDTO requestDTO) {
-        postService.createPost(requestDTO);
+    public void createPost(
+        @RequestBody RequestPostDTO requestPostDTO) {
+            postService.createPost(requestPostDTO);
     }
 }

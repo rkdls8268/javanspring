@@ -8,7 +8,7 @@ import java.util.List;
 
 @Data
 @Setter(AccessLevel.NONE) // default: public
-public class RequestDTO {
+public class RequestPostDTO {
     @Setter // 추후 업데이트 시 필요
     private String post;
     private List<String> images;

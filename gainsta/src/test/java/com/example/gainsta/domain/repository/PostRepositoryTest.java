@@ -13,6 +13,7 @@ class PostRepositoryTest {
     public PostRepository postRepository;
     @Test
     @DisplayName("포스트를 생성할 때 생성일자가 올바르게 나온다.")
+    // 테스트메소드명: 테스트 대상, 어떤 상황인지, 예상되는 결과 포함
     void createPost() {
         // id, post, place
         PostEntity post = new PostEntity();
